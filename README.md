@@ -1,5 +1,3 @@
-👇
-
 🍽️ Hotel Menu Billing System | Java Console Application
 
 The Hotel Menu Billing System is a simple yet engaging Java console application that brings a restaurant-like experience to your terminal. Users can browse through categories like Fried Rice, Fried Noodles, and Side Dishes, select their preferred type, specify the number of plates, and instantly view their total bill.

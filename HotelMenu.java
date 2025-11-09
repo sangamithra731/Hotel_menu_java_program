@@ -1,0 +1,65 @@
+import java.util.*;
+public class HotelMenu {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("*** S3 HERITAGE HOTEL ***");
+System.out.println("1. Fried Rice");
+System.out.println("2. Fried Noodles");
+System.out.println("3. Side Dishes");
+System.out.print("Enter your choice: ");
+int n=sc.nextInt();
+int price=0;
+switch(n){
+case 1:
+System.out.println("1. Veg Rice - 50");
+System.out.println("2. Egg Rice - 70");
+System.out.println("3. Chicken Rice - 120");
+System.out.print("Enter type: ");
+int a=sc.nextInt();
+if(a==1)
+price=50;
+else if(a==2)
+price=70;
+else if(a==3)
+price=120;
+else
+System.out.println("Invalid type! Please try again.");
+break;
+case 2:
+System.out.println("1. Veg Noodles - 50");
+System.out.println("2. Egg Noodles - 70");
+System.out.println("3. Chicken Noodles - 120");
+System.out.print("Enter type: ");
+int b=sc.nextInt();
+if(b==1)
+price=50;
+else if(b==2)
+price=70;
+else if(b==3)
+price=120;
+else
+System.out.println("Invalid type! Please try again.");
+break;
+case 3:
+System.out.println("1. Gobi Chilli - 60");
+System.out.println("2. Chicken Chilli - 100");
+System.out.print("Enter type: ");
+int c=sc.nextInt();
+if(c==1)
+price=60;
+else if(c==2)
+price=100;
+else
+System.out.println("Invalid type! Please try again.");
+break;
+default:
+System.out.println("Invalid choice! Please try again.");
+}
+if(price>0){
+System.out.print("How many plates? ");
+int plate=sc.nextInt();
+System.out.println("Total = Rs." + (price*plate));
+System.out.println("Thank you! Visit again");
+}
+}
+}
